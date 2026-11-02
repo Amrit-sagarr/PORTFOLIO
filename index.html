@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amrit Sagar | Developer & AI Explorer</title>
+  <meta name="description" content="Personal portfolio of Amrit Sagar - Exploring AI Agents, Python, CLI Tooling, Systems & Reinforcement Learning.">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Glow Accents -->
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">
+        <span class="logo-code">&lt;</span>AS<span class="logo-code">/&gt;</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#journey">Journey</a></li>
+        <li><a href="#terminal">Terminal</a></li>
+        <li><a href="#contact" class="btn-nav">Connect</a></li>
+      </ul>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="home" class="hero">
+    <div class="container hero-content">
+      <div class="badge">
+        <span class="badge-dot"></span>
+        <span>Leveling up every single day</span>
+      </div>
+      <h1 class="hero-title">
+        Hi, I'm <span class="gradient-text">Amrit Sagar</span>.<br>
+        Building with AI Agents & Code.
+      </h1>
+      <p class="hero-subtitle">
+        Bridging developer tooling, Python scripting, and autonomous AI agents. 
+        Passionate about CLI power-use, systems exploration, and continuous learning.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#skills" class="btn btn-primary">
+          Explore My Skills
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+        <a href="#journey" class="btn btn-secondary">My Learning Roadmap</a>
+      </div>
+
+      <!-- Quick Metrics Grid -->
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <span class="metric-num">Agentic AI</span>
+          <span class="metric-label">AGY & Multi-Agent Workflows</span>
+        </div>
+        <div class="metric-card">
+          <span class="metric-num">CLI Native</span>
+          <span class="metric-label">Terminal Efficiency & Tooling</span>
+        </div>
+        <div class="metric-card">
+          <span class="metric-num">Python & C</span>
+          <span class="metric-label">Foundational Problem Solving</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">From Curiosity to Real Confidence</h2>
+        <p class="section-desc">
+          Growth isn't linear—it comes from getting your hands dirty in the terminal and experimenting with the latest in tech.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card glass">
+          <div class="about-icon">⚡</div>
+          <h3>The Shift in Perspective</h3>
+          <p>
+            Not long ago, autonomous agents and heavy terminal workflows felt intimidating. 
+            Today, working inside the CLI and orchestrating <strong>AGY and AI Agents</strong> has transformed my speed, curiosity, and confidence.
+          </p>
+        </div>
+
+        <div class="about-card glass">
+          <div class="about-icon">🧠</div>
+          <h3>Foundations & Fundamentals</h3>
+          <p>
+            I pair modern AI capabilities with rock-solid computing fundamentals:
+            writing clean <strong>Python</strong>, dissecting low-level concepts in <strong>C</strong>, and expanding systems knowledge.
+          </p>
+        </div>
+
+        <div class="about-card glass">
+          <div class="about-icon">🚀</div>
+          <h3>Disciplined Mindset</h3>
+          <p>
+            Whether debugging memory logic in C or pushing physical limits in the gym, consistency is what matters. 
+            I bring genuine drive, curiosity, and high momentum into every project.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Terminal Section -->
+  <section id="terminal" class="section">
+    <div class="container">
+      <div class="terminal-wrapper glass">
+        <div class="terminal-bar">
+          <div class="terminal-dots">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+          </div>
+          <div class="terminal-title">amrit@workstation: ~/portfolio</div>
+        </div>
+        <div class="terminal-body" id="terminalOutput">
+          <p><span class="prompt">amrit@dev:~$</span> whoami</p>
+          <p class="term-res">Amrit Sagar - Aspiring AI & Systems Engineer</p>
+          <p><span class="prompt">amrit@dev:~$</span> cat current_focus.json</p>
+          <pre class="term-code">{
+  "status": "High momentum & building confidence",
+  "daily_tools": ["CLI / Zsh", "agy (Antigravity)", "Python 3"],
+  "exploring": ["C Architecture", "Autonomous AI Agents", "Gym & Fitness Routine"],
+  "mindset": "Consistent daily reps, constant learning"
+}</pre>
+          <p><span class="prompt">amrit@dev:~$</span> agy --version</p>
+          <p class="term-res">Antigravity 2.0 (Active Agentic Workspace)</p>
+          <p class="term-cursor"><span class="prompt">amrit@dev:~$</span> <span class="blink">▌</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Capabilities</span>
+        <h2 class="section-title">What I Bring to the Table</h2>
+        <p class="section-desc">Organized across modern developer tooling, intelligence, and system basics.</p>
+      </div>
+
+      <div class="skills-grid">
+        
+        <!-- Skill 1 -->
+        <div class="skill-card glass">
+          <div class="skill-header">
+            <div class="skill-pill">AI & Agents</div>
+            <span class="skill-level">Active Focus</span>
+          </div>
+          <h3>Autonomous AI & AGY</h3>
+          <p>
+            Adept at leveraging Google Antigravity (`agy`), configuring agentic prompts, multi-agent workflows, and utilizing modern LLMs to accelerate complex programming cycles.
+          </p>
+          <div class="skill-tags">
+            <span>AGY Tools</span>
+            <span>AI Agents</span>
+            <span>Prompt Craft</span>
+            <span>Workflow Automation</span>
+          </div>
+        </div>
+
+        <!-- Skill 2 -->
+        <div class="skill-card glass">
+          <div class="skill-header">
+            <div class="skill-pill">Productivity</div>
+            <span class="skill-level">Comfortable</span>
+          </div>
+          <h3>Command Line Interface (CLI)</h3>
+          <p>
+            Vastly improved terminal fluency. Navigating Unix environments, file manipulation, pipeline chaining, package managers, and managing tasks natively from shell.
+          </p>
+          <div class="skill-tags">
+            <span>Bash / Zsh</span>
+            <span>Shell Scripting</span>
+            <span>Git & Versioning</span>
+            <span>Dev Environment</span>
+          </div>
+        </div>
+
+        <!-- Skill 3 -->
+        <div class="skill-card glass">
+          <div class="skill-header">
+            <div class="skill-pill">Development</div>
+            <span class="skill-level">Solid Basics</span>
+          </div>
+          <h3>Python Programming</h3>
+          <p>
+            Foundational understanding of core Python: data structures, object-oriented concepts, scripting utility tasks, and interfacing with modern AI frameworks and APIs.
+          </p>
+          <div class="skill-tags">
+            <span>Core Python</span>
+            <span>Data Structures</span>
+            <span>Scripting</span>
+            <span>APIs & JSON</span>
+          </div>
+        </div>
+
+        <!-- Skill 4 -->
+        <div class="skill-card glass">
+          <div class="skill-header">
+            <div class="skill-pill">Systems</div>
+            <span class="skill-level">Foundational</span>
+          </div>
+          <h3>C Language & Architecture</h3>
+          <p>
+            Exploring the fundamentals of low-level memory, pointers, compilation cycles, and computational architecture to understand how software truly communicates with hardware.
+          </p>
+          <div class="skill-tags">
+            <span>C Basics</span>
+            <span>Pointers & Memory</span>
+            <span>Algorithms</span>
+            <span>Compilers (gcc/clang)</span>
+          </div>
+        </div>
+
+        <!-- Skill 5 -->
+        <div class="skill-card glass">
+          <div class="skill-header">
+            <div class="skill-pill">Fitness & Life</div>
+            <span class="skill-level">Daily Habit</span>
+          </div>
+          <h3>Gym & Physical Discipline</h3>
+          <p>
+            Committed to physical fitness and gym training. Channeling the daily discipline, endurance, and consistency built in the gym directly into continuous learning and high-focus coding sessions.
+          </p>
+          <div class="skill-tags">
+            <span>Strength & Fitness</span>
+            <span>Daily Discipline</span>
+            <span>Mental Resilience</span>
+            <span>Work-Life Balance</span>
+          </div>
+        </div>
+
+        <!-- Skill 6 -->
+        <div class="skill-card glass">
+          <div class="skill-header">
+            <div class="skill-pill">Mindset</div>
+            <span class="skill-level">Thriving</span>
+          </div>
+          <h3>Confidence & Fast Adaptability</h3>
+          <p>
+            The shift from hesitation to ownership. Eager to take on challenging bugs, explore unfamiliar codebases, and iterate rapidly with continuous feedback.
+          </p>
+          <div class="skill-tags">
+            <span>Rapid Prototyping</span>
+            <span>Self-Starter</span>
+            <span>Problem Solving</span>
+            <span>Resilience</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Journey / Roadmap Section -->
+  <section id="journey" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Evolution</span>
+        <h2 class="section-title">The Learning Trajectory</h2>
+        <p class="section-desc">How each milestone laid the brickwork for my current capabilities.</p>
+      </div>
+
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass">
+            <span class="timeline-date">Phase 1 • The Roots</span>
+            <h3>C & Computing Basics</h3>
+            <p>
+              Started digging into the C programming language to demystify pointers, compilation, and system structure. Developed a deep respect for memory and hardware interactions.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass">
+            <span class="timeline-date">Phase 2 • Flexibility & Problem Solving</span>
+            <h3>Python Fundamentals</h3>
+            <p>
+              Embraced Python's expressive syntax and versatility. Built foundational knowledge around algorithms, handling data, and writing clean, maintainable logic.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass">
+            <span class="timeline-date">Phase 3 • Terminal Empowerment</span>
+            <h3>CLI Mastery</h3>
+            <p>
+              Moved beyond the GUI into native command line workflows. Mastered navigation, text manipulation, and orchestrating dev processes directly in terminal.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass">
+            <span class="timeline-date">Phase 4 • Intelligent Automation</span>
+            <h3>AI Agents & AGY Exploration</h3>
+            <p>
+              Stepped into the frontier of AI: Antigravity tooling, pair programming with autonomous agentic systems, and transforming developer productivity.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item highlight-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass">
+            <span class="timeline-date">Present & Future</span>
+            <h3>Building with Confidence</h3>
+            <p>
+              Armed with a growing toolset, clear momentum, and genuine passion to build impactful software and AI solutions.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / Call to Action -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="contact-box glass">
+        <span class="section-tag">Get in Touch</span>
+        <h2 class="contact-title">Let's Connect & Collaborate</h2>
+        <p class="contact-desc">
+          Interested in working together, discussing AI agents, or sharing dev insights? My inbox is always open.
+        </p>
+
+        <div class="contact-buttons">
+          <a href="mailto:amrit@example.com" class="btn btn-primary">
+            Send an Email
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </a>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            GitHub Profile
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 Amrit Sagar. Crafted with HTML, CSS & AI Pair Programming.</p>
+      <div class="footer-links">
+        <a href="#home">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
