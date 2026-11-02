@@ -1,6 +1,6 @@
 // Mobile Menu Toggle
-const mobileBtn = document.getElementById('mobileMenuBtn');
-const navLinks = document.querySelector('.nav-links');
+const mobileBtn = document.getElementById('mobileToggle') || document.getElementById('mobileMenuBtn');
+const navLinks = document.querySelector('.mech-nav-links') || document.querySelector('.nav-links');
 
 if (mobileBtn && navLinks) {
   mobileBtn.addEventListener('click', () => {
@@ -15,40 +15,52 @@ if (mobileBtn && navLinks) {
   });
 }
 
-// Interactive Terminal Input simulation
+// Interactive Robotics Terminal Telemetry
 const terminalOutput = document.getElementById('terminalOutput');
 const commands = [
-  { cmd: 'agy --explore agents', res: '🤖 Orchestrated multi-agent workflow: Autonomous Planner -> Developer -> Verifier' },
-  { cmd: 'python3 -m unittest', res: 'Ran 14 tests in 0.042s - OK' },
-  { cmd: 'curl wttr.in/gym_routine', res: '💪 5-Day Split: Progressive overload, discipline & consistency dialed in' },
-  { cmd: 'echo $CONFIDENCE_LEVEL', res: 'Growing steadily every day 🚀' }
+  { 
+    cmd: 'agy --orchestrate --mode=autonomous', 
+    res: '[SYS_STATUS] Multi-Agent Pipeline Online: Planner -> Generator -> Verifier [ALL CLEAR]' 
+  },
+  { 
+    cmd: 'cat ~/.gym_regimen.log', 
+    res: '🏋️ PROGRESSIVE OVERLOAD // Reps: 5x5 | Consistency: 100% | Mental Grit: Maximum' 
+  },
+  { 
+    cmd: 'gcc -Wall -O2 memory_arch.c -o sys_core && ./sys_core', 
+    res: 'Pointers initialized. Heap allocated: 4096 bytes. Memory safety verified.' 
+  },
+  { 
+    cmd: 'python3 -c "import antigravity; print(\'Momentum High\')"', 
+    res: '>>> Momentum High: Rapidly building confidence & deploying agentic solutions 🚀' 
+  }
 ];
 
 let cmdIndex = 0;
 
-// Periodically simulate interactive terminal entries or let user click to run next command
 if (terminalOutput) {
   terminalOutput.style.cursor = 'pointer';
-  terminalOutput.title = 'Click to simulate terminal commands!';
+  terminalOutput.title = 'Click anywhere inside to inject next telemetry command!';
 
   terminalOutput.addEventListener('click', () => {
     const item = commands[cmdIndex % commands.length];
     cmdIndex++;
 
-    const newCmd = document.createElement('p');
-    newCmd.innerHTML = `<span class="prompt">amrit@dev:~$</span> ${item.cmd}`;
+    const row = document.createElement('div');
+    row.className = 'term-row';
+    row.innerHTML = `<span class="t-prompt">amrit@mech:~$</span> <span class="t-cmd">${item.cmd}</span>`;
     
-    const newRes = document.createElement('p');
-    newRes.className = 'term-res';
-    newRes.textContent = item.res;
+    const res = document.createElement('div');
+    res.className = 't-res text-yellow';
+    res.textContent = item.res;
 
-    const cursor = terminalOutput.querySelector('.term-cursor');
-    if (cursor) {
-      terminalOutput.insertBefore(newCmd, cursor);
-      terminalOutput.insertBefore(newRes, cursor);
+    const cursorRow = terminalOutput.querySelector('.term-cursor-row') || terminalOutput.querySelector('.term-cursor');
+    if (cursorRow) {
+      terminalOutput.insertBefore(row, cursorRow);
+      terminalOutput.insertBefore(res, cursorRow);
     } else {
-      terminalOutput.appendChild(newCmd);
-      terminalOutput.appendChild(newRes);
+      terminalOutput.appendChild(row);
+      terminalOutput.appendChild(res);
     }
   });
 }

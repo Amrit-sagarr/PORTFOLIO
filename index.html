@@ -3,387 +3,537 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Amrit Sagar | Developer & AI Explorer</title>
-  <meta name="description" content="Personal portfolio of Amrit Sagar - Exploring AI Agents, Python, CLI Tooling, Systems & Reinforcement Learning.">
-  <!-- Fonts -->
+  <title>Amrit Sagar | Autonomous AI & Robotics Systems</title>
+  <meta name="description" content="Robotic & Agentic Systems Portfolio of Amrit Sagar. Black, White & Cyber Yellow HUD Interface.">
+  <!-- Fonts: Chakra Petch (Robotics/HUD) + JetBrains Mono + Orbitron -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-  <!-- Stylesheet -->
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,400;0,600;0,700;1,700&family=JetBrains+Mono:wght@400;500;700;800&family=Orbitron:wght@600;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="mech-theme">
 
-  <!-- Background Glow Accents -->
-  <div class="blob blob-1"></div>
-  <div class="blob blob-2"></div>
+  <!-- HUD Grid Overlay & Scanning Laser Line -->
+  <div class="hud-grid-overlay"></div>
+  <div class="scanline"></div>
 
-  <!-- Navigation -->
-  <nav class="navbar">
+  <!-- Top Mechanical Header / Navbar -->
+  <header class="mech-navbar">
     <div class="nav-container">
-      <a href="#home" class="logo">
-        <span class="logo-code">&lt;</span>AS<span class="logo-code">/&gt;</span>
+      <a href="#home" class="mech-logo">
+        <span class="hazard-tag">//</span>
+        <span class="logo-core">MECH<span class="text-yellow">.01</span></span>
+        <span class="hud-bracket">[SYS_ONLINE]</span>
       </a>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#journey">Journey</a></li>
-        <li><a href="#terminal">Terminal</a></li>
-        <li><a href="#contact" class="btn-nav">Connect</a></li>
+
+      <ul class="mech-nav-links">
+        <li><a href="#about"><span class="nav-num">01//</span> ABOUT</a></li>
+        <li><a href="#skills"><span class="nav-num">02//</span> SUBSYSTEMS</a></li>
+        <li><a href="#telemetry"><span class="nav-num">03//</span> TELEMETRY</a></li>
+        <li><a href="#timeline"><span class="nav-num">04//</span> EVOLUTION</a></li>
+        <li><a href="#contact" class="btn-yellow-sm">CONNECT &gt;&gt;</a></li>
       </ul>
-      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation">
-        <span></span>
-        <span></span>
-        <span></span>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">
+        <span></span><span></span><span></span>
       </button>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <header id="home" class="hero">
-    <div class="container hero-content">
-      <div class="badge">
-        <span class="badge-dot"></span>
-        <span>Leveling up every single day</span>
-      </div>
-      <h1 class="hero-title">
-        Hi, I'm <span class="gradient-text">Amrit Sagar</span>.<br>
-        Building with AI Agents & Code.
-      </h1>
-      <p class="hero-subtitle">
-        Bridging developer tooling, Python scripting, and autonomous AI agents. 
-        Passionate about CLI power-use, systems exploration, and continuous learning.
-      </p>
-
-      <div class="hero-actions">
-        <a href="#skills" class="btn btn-primary">
-          Explore My Skills
-          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <line x1="5" y1="12" x2="19" y2="12"></line>
-            <polyline points="12 5 19 12 12 19"></polyline>
-          </svg>
-        </a>
-        <a href="#journey" class="btn btn-secondary">My Learning Roadmap</a>
-      </div>
-
-      <!-- Quick Metrics Grid -->
-      <div class="metrics-grid">
-        <div class="metric-card">
-          <span class="metric-num">Agentic AI</span>
-          <span class="metric-label">AGY & Multi-Agent Workflows</span>
-        </div>
-        <div class="metric-card">
-          <span class="metric-num">CLI Native</span>
-          <span class="metric-label">Terminal Efficiency & Tooling</span>
-        </div>
-        <div class="metric-card">
-          <span class="metric-num">Python & C</span>
-          <span class="metric-label">Foundational Problem Solving</span>
-        </div>
-      </div>
     </div>
   </header>
 
-  <!-- About Section -->
-  <section id="about" class="section">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">About Me</span>
-        <h2 class="section-title">From Curiosity to Real Confidence</h2>
-        <p class="section-desc">
-          Growth isn't linear—it comes from getting your hands dirty in the terminal and experimenting with the latest in tech.
-        </p>
-      </div>
-
-      <div class="about-grid">
-        <div class="about-card glass">
-          <div class="about-icon">⚡</div>
-          <h3>The Shift in Perspective</h3>
-          <p>
-            Not long ago, autonomous agents and heavy terminal workflows felt intimidating. 
-            Today, working inside the CLI and orchestrating <strong>AGY and AI Agents</strong> has transformed my speed, curiosity, and confidence.
-          </p>
-        </div>
-
-        <div class="about-card glass">
-          <div class="about-icon">🧠</div>
-          <h3>Foundations & Fundamentals</h3>
-          <p>
-            I pair modern AI capabilities with rock-solid computing fundamentals:
-            writing clean <strong>Python</strong>, dissecting low-level concepts in <strong>C</strong>, and expanding systems knowledge.
-          </p>
-        </div>
-
-        <div class="about-card glass">
-          <div class="about-icon">🚀</div>
-          <h3>Disciplined Mindset</h3>
-          <p>
-            Whether debugging memory logic in C or pushing physical limits in the gym, consistency is what matters. 
-            I bring genuine drive, curiosity, and high momentum into every project.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Interactive Terminal Section -->
-  <section id="terminal" class="section">
-    <div class="container">
-      <div class="terminal-wrapper glass">
-        <div class="terminal-bar">
-          <div class="terminal-dots">
-            <span class="dot dot-red"></span>
-            <span class="dot dot-yellow"></span>
-            <span class="dot dot-green"></span>
-          </div>
-          <div class="terminal-title">amrit@workstation: ~/portfolio</div>
-        </div>
-        <div class="terminal-body" id="terminalOutput">
-          <p><span class="prompt">amrit@dev:~$</span> whoami</p>
-          <p class="term-res">Amrit Sagar - Aspiring AI & Systems Engineer</p>
-          <p><span class="prompt">amrit@dev:~$</span> cat current_focus.json</p>
-          <pre class="term-code">{
-  "status": "High momentum & building confidence",
-  "daily_tools": ["CLI / Zsh", "agy (Antigravity)", "Python 3"],
-  "exploring": ["C Architecture", "Autonomous AI Agents", "Gym & Fitness Routine"],
-  "mindset": "Consistent daily reps, constant learning"
-}</pre>
-          <p><span class="prompt">amrit@dev:~$</span> agy --version</p>
-          <p class="term-res">Antigravity 2.0 (Active Agentic Workspace)</p>
-          <p class="term-cursor"><span class="prompt">amrit@dev:~$</span> <span class="blink">▌</span></p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills" class="section">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Capabilities</span>
-        <h2 class="section-title">What I Bring to the Table</h2>
-        <p class="section-desc">Organized across modern developer tooling, intelligence, and system basics.</p>
-      </div>
-
-      <div class="skills-grid">
+  <!-- Hero Section with Photo Aside -->
+  <section id="home" class="hero-section">
+    <div class="container hero-split">
+      
+      <!-- Left Column: Specs, Flashing Name, Bio, Actions -->
+      <div class="hero-text-side">
         
-        <!-- Skill 1 -->
-        <div class="skill-card glass">
-          <div class="skill-header">
-            <div class="skill-pill">AI & Agents</div>
-            <span class="skill-level">Active Focus</span>
-          </div>
-          <h3>Autonomous AI & AGY</h3>
-          <p>
-            Adept at leveraging Google Antigravity (`agy`), configuring agentic prompts, multi-agent workflows, and utilizing modern LLMs to accelerate complex programming cycles.
-          </p>
-          <div class="skill-tags">
-            <span>AGY Tools</span>
-            <span>AI Agents</span>
-            <span>Prompt Craft</span>
-            <span>Workflow Automation</span>
-          </div>
+        <div class="hud-status-badge">
+          <span class="pulse-beacon"></span>
+          <span class="badge-text">ROBOTICS & AGENTIC ARCHITECTURE // REV 2.4</span>
         </div>
 
-        <!-- Skill 2 -->
-        <div class="skill-card glass">
-          <div class="skill-header">
-            <div class="skill-pill">Productivity</div>
-            <span class="skill-level">Comfortable</span>
-          </div>
-          <h3>Command Line Interface (CLI)</h3>
-          <p>
-            Vastly improved terminal fluency. Navigating Unix environments, file manipulation, pipeline chaining, package managers, and managing tasks natively from shell.
-          </p>
-          <div class="skill-tags">
-            <span>Bash / Zsh</span>
-            <span>Shell Scripting</span>
-            <span>Git & Versioning</span>
-            <span>Dev Environment</span>
-          </div>
+        <h1 class="hero-headline">
+          OPERATOR: <br>
+          <span class="flashing-name" data-text="AMRIT SAGAR">AMRIT SAGAR</span>
+        </h1>
+
+        <div class="sub-headline-bracket">
+          <span class="bracket-symbol">[</span>
+          <span class="sub-text">AI AGENT SPECIALIST &bull; CLI OPERATOR &bull; SYSTEMS RESEARCH</span>
+          <span class="bracket-symbol">]</span>
         </div>
 
-        <!-- Skill 3 -->
-        <div class="skill-card glass">
-          <div class="skill-header">
-            <div class="skill-pill">Development</div>
-            <span class="skill-level">Solid Basics</span>
-          </div>
-          <h3>Python Programming</h3>
-          <p>
-            Foundational understanding of core Python: data structures, object-oriented concepts, scripting utility tasks, and interfacing with modern AI frameworks and APIs.
-          </p>
-          <div class="skill-tags">
-            <span>Core Python</span>
-            <span>Data Structures</span>
-            <span>Scripting</span>
-            <span>APIs & JSON</span>
-          </div>
-        </div>
-
-        <!-- Skill 4 -->
-        <div class="skill-card glass">
-          <div class="skill-header">
-            <div class="skill-pill">Systems</div>
-            <span class="skill-level">Foundational</span>
-          </div>
-          <h3>C Language & Architecture</h3>
-          <p>
-            Exploring the fundamentals of low-level memory, pointers, compilation cycles, and computational architecture to understand how software truly communicates with hardware.
-          </p>
-          <div class="skill-tags">
-            <span>C Basics</span>
-            <span>Pointers & Memory</span>
-            <span>Algorithms</span>
-            <span>Compilers (gcc/clang)</span>
-          </div>
-        </div>
-
-        <!-- Skill 5 -->
-        <div class="skill-card glass">
-          <div class="skill-header">
-            <div class="skill-pill">Fitness & Life</div>
-            <span class="skill-level">Daily Habit</span>
-          </div>
-          <h3>Gym & Physical Discipline</h3>
-          <p>
-            Committed to physical fitness and gym training. Channeling the daily discipline, endurance, and consistency built in the gym directly into continuous learning and high-focus coding sessions.
-          </p>
-          <div class="skill-tags">
-            <span>Strength & Fitness</span>
-            <span>Daily Discipline</span>
-            <span>Mental Resilience</span>
-            <span>Work-Life Balance</span>
-          </div>
-        </div>
-
-        <!-- Skill 6 -->
-        <div class="skill-card glass">
-          <div class="skill-header">
-            <div class="skill-pill">Mindset</div>
-            <span class="skill-level">Thriving</span>
-          </div>
-          <h3>Confidence & Fast Adaptability</h3>
-          <p>
-            The shift from hesitation to ownership. Eager to take on challenging bugs, explore unfamiliar codebases, and iterate rapidly with continuous feedback.
-          </p>
-          <div class="skill-tags">
-            <span>Rapid Prototyping</span>
-            <span>Self-Starter</span>
-            <span>Problem Solving</span>
-            <span>Resilience</span>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Journey / Roadmap Section -->
-  <section id="journey" class="section">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Evolution</span>
-        <h2 class="section-title">The Learning Trajectory</h2>
-        <p class="section-desc">How each milestone laid the brickwork for my current capabilities.</p>
-      </div>
-
-      <div class="timeline">
-
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content glass">
-            <span class="timeline-date">Phase 1 • The Roots</span>
-            <h3>C & Computing Basics</h3>
-            <p>
-              Started digging into the C programming language to demystify pointers, compilation, and system structure. Developed a deep respect for memory and hardware interactions.
-            </p>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content glass">
-            <span class="timeline-date">Phase 2 • Flexibility & Problem Solving</span>
-            <h3>Python Fundamentals</h3>
-            <p>
-              Embraced Python's expressive syntax and versatility. Built foundational knowledge around algorithms, handling data, and writing clean, maintainable logic.
-            </p>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content glass">
-            <span class="timeline-date">Phase 3 • Terminal Empowerment</span>
-            <h3>CLI Mastery</h3>
-            <p>
-              Moved beyond the GUI into native command line workflows. Mastered navigation, text manipulation, and orchestrating dev processes directly in terminal.
-            </p>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content glass">
-            <span class="timeline-date">Phase 4 • Intelligent Automation</span>
-            <h3>AI Agents & AGY Exploration</h3>
-            <p>
-              Stepped into the frontier of AI: Antigravity tooling, pair programming with autonomous agentic systems, and transforming developer productivity.
-            </p>
-          </div>
-        </div>
-
-        <div class="timeline-item highlight-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content glass">
-            <span class="timeline-date">Present & Future</span>
-            <h3>Building with Confidence</h3>
-            <p>
-              Armed with a growing toolset, clear momentum, and genuine passion to build impactful software and AI solutions.
-            </p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact / Call to Action -->
-  <section id="contact" class="section">
-    <div class="container">
-      <div class="contact-box glass">
-        <span class="section-tag">Get in Touch</span>
-        <h2 class="contact-title">Let's Connect & Collaborate</h2>
-        <p class="contact-desc">
-          Interested in working together, discussing AI agents, or sharing dev insights? My inbox is always open.
+        <p class="hero-description">
+          Engineered for high-momentum software and autonomous agent systems. Bridging low-level 
+          <span class="text-white bold">C computation</span>, rapid <span class="text-white bold">Python scripting</span>, 
+          and advanced <span class="text-yellow bold">AGY Multi-Agent</span> pipelines with daily physical discipline.
         </p>
 
-        <div class="contact-buttons">
-          <a href="mailto:amrit@example.com" class="btn btn-primary">
-            Send an Email
-            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-              <polyline points="22,6 12,13 2,6"></polyline>
-            </svg>
+        <!-- Mechanical Action Buttons -->
+        <div class="hero-actions">
+          <a href="#skills" class="mech-btn btn-primary-yellow">
+            <span class="btn-corner"></span>
+            INITIALIZE SUBSYSTEMS
+            <span class="btn-arrow">&#9658;</span>
           </a>
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-            GitHub Profile
+          <a href="#telemetry" class="mech-btn btn-outline-white">
+            <span class="btn-corner"></span>
+            RUN CLI TERMINAL
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-            LinkedIn
-          </a>
+        </div>
+
+        <!-- Robotics Status Meters -->
+        <div class="mech-stats-strip">
+          <div class="stat-unit">
+            <div class="stat-header">
+              <span class="stat-code">SYS-01</span>
+              <span class="stat-val text-yellow">98%</span>
+            </div>
+            <div class="stat-bar"><div class="stat-fill" style="width: 98%;"></div></div>
+            <span class="stat-name">CLI ACCELERATION</span>
+          </div>
+
+          <div class="stat-unit">
+            <div class="stat-header">
+              <span class="stat-code">SYS-02</span>
+              <span class="stat-val text-yellow">100%</span>
+            </div>
+            <div class="stat-bar"><div class="stat-fill" style="width: 100%;"></div></div>
+            <span class="stat-name">AGY AI WORKFLOWS</span>
+          </div>
+
+          <div class="stat-unit">
+            <div class="stat-header">
+              <span class="stat-code">SYS-03</span>
+              <span class="stat-val text-yellow">MAX</span>
+            </div>
+            <div class="stat-bar"><div class="stat-fill" style="width: 95%;"></div></div>
+            <span class="stat-name">GYM & DISCIPLINE</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right Column: Photo Aside with Cybernetic HUD Framing -->
+      <div class="hero-photo-side">
+        <div class="mech-frame-container">
+          
+          <!-- Tactical HUD Corners -->
+          <div class="corner-bracket corner-tl"></div>
+          <div class="corner-bracket corner-tr"></div>
+          <div class="corner-bracket corner-bl"></div>
+          <div class="corner-bracket corner-br"></div>
+
+          <!-- Top HUD Header -->
+          <div class="frame-top-bar">
+            <span class="frame-id"><span class="blink-dot"></span> UNIT // IDENT-0824</span>
+            <span class="frame-mode">TARGET_LOCKED</span>
+          </div>
+
+          <!-- Photo Container -->
+          <div class="frame-image-wrapper">
+            <!-- Robotic Visual / Schematic Avatar Placeholder -->
+            <div class="avatar-robotics-graphic">
+              <!-- High-Tech Mech SVG Schematic Illustration -->
+              <svg class="mech-schematic-svg" viewBox="0 0 320 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Outer circuit ring -->
+                <circle cx="160" cy="170" r="130" stroke="#ffea00" stroke-width="1.5" stroke-dasharray="6 8" opacity="0.4" class="spin-circle" />
+                <circle cx="160" cy="170" r="105" stroke="#ffffff" stroke-width="1" stroke-dasharray="2 12" opacity="0.3" />
+                
+                <!-- Crosshair reticle -->
+                <line x1="160" y1="20" x2="160" y2="320" stroke="#ffea00" stroke-width="1" opacity="0.25" />
+                <line x1="20" y1="170" x2="300" y2="170" stroke="#ffea00" stroke-width="1" opacity="0.25" />
+                
+                <!-- Stylized Mech/Cybernetic Helmet Silhouette -->
+                <path d="M110 90 L160 55 L210 90 L225 150 L210 230 L160 270 L110 230 L95 150 Z" 
+                      fill="#0d0d0d" stroke="#ffea00" stroke-width="2.5" />
+                
+                <!-- Visor / Eye Optics -->
+                <polygon points="125,145 195,145 185,165 135,165" fill="#ffea00" class="visor-pulse" />
+                <line x1="120" y1="140" x2="200" y2="140" stroke="#ffffff" stroke-width="1.5" />
+                <line x1="130" y1="170" x2="190" y2="170" stroke="#ffea00" stroke-width="1" />
+                
+                <!-- Chin vents & mechanical details -->
+                <line x1="148" y1="210" x2="172" y2="210" stroke="#ffffff" stroke-width="2" />
+                <line x1="152" y1="220" x2="168" y2="220" stroke="#ffea00" stroke-width="2" />
+                <line x1="155" y1="230" x2="165" y2="230" stroke="#ffffff" stroke-width="2" />
+
+                <!-- Tactical Side Panels -->
+                <rect x="75" y="130" width="12" height="40" fill="#141414" stroke="#ffea00" stroke-width="1.2" />
+                <rect x="233" y="130" width="12" height="40" fill="#141414" stroke="#ffea00" stroke-width="1.2" />
+                
+                <!-- Tech text markings -->
+                <text x="160" y="305" font-family="'JetBrains Mono', monospace" font-size="10" fill="#ffea00" text-anchor="middle" letter-spacing="3">AMRIT SAGAR // MECH CORE</text>
+                <text x="160" y="325" font-family="'JetBrains Mono', monospace" font-size="8" fill="#ffffff" text-anchor="middle" opacity="0.7">STATUS: OPTIMAL CONFIDENCE</text>
+              </svg>
+            </div>
+
+            <!-- Real Photo Slot Note: You can replace this wrapper with your actual <img> anytime! -->
+            <div class="photo-overlay-hud">
+              <span class="hud-coord">X: 42.909 &bull; Y: 88.102</span>
+              <span class="hud-target-lock">[LOCKED]</span>
+            </div>
+          </div>
+
+          <!-- Bottom Telemetry Footer inside Photo Card -->
+          <div class="frame-bottom-bar">
+            <div class="hazard-stripe"></div>
+            <div class="frame-readout">
+              <span>BIOMETRIC: ACTIVE</span>
+              <span class="text-yellow">DISCIPLINE: 100%</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section 01: Core Objectives & About -->
+  <section id="about" class="mech-section">
+    <div class="container">
+      <div class="mech-section-heading">
+        <div class="heading-tag">// 01: SYSTEM_IDENTITY</div>
+        <h2 class="heading-title">ENGINEERING MINDSET &amp; MOMENTUM</h2>
+        <div class="heading-line"></div>
+      </div>
+
+      <div class="mech-tri-grid">
+        
+        <div class="mech-panel">
+          <div class="panel-header">
+            <span class="panel-index">#01-A</span>
+            <span class="panel-type">AI AGENT ADOPTION</span>
+          </div>
+          <div class="panel-icon-box">&#9881;</div>
+          <h3 class="panel-title">AUTONOMOUS MULTI-AGENT SYNERGY</h3>
+          <p class="panel-text">
+            Previously unfamiliar with deep AI automation, now natively orchestrating Google Antigravity (<span class="text-yellow">AGY</span>) and multi-agent loops to accelerate development cycles 10x.
+          </p>
+          <div class="panel-footer-code">&gt;&gt; AGY_SUITE // ENGAGED</div>
+        </div>
+
+        <div class="mech-panel">
+          <div class="panel-header">
+            <span class="panel-index">#01-B</span>
+            <span class="panel-type">TERMINAL MASTERY</span>
+          </div>
+          <div class="panel-icon-box">&#9002;</div>
+          <h3 class="panel-title">CLI-FIRST VELOCITY</h3>
+          <p class="panel-text">
+            Operating from the terminal shell with high efficiency. Navigating Unix directories, shell piping, command sequencing, and scripting to eliminate GUI friction.
+          </p>
+          <div class="panel-footer-code">&gt;&gt; ZSH // TERMINAL_NATIVE</div>
+        </div>
+
+        <div class="mech-panel">
+          <div class="panel-header">
+            <span class="panel-index">#01-C</span>
+            <span class="panel-type">PHYSICAL &amp; MENTAL</span>
+          </div>
+          <div class="panel-icon-box">&#9670;</div>
+          <h3 class="panel-title">GYM DISCIPLINE &amp; CONFIDENCE</h3>
+          <p class="panel-text">
+            The physical gym fuels high endurance and relentless grit. Overcoming heavy sets translates directly to solving tough algorithms and building real confidence.
+          </p>
+          <div class="panel-footer-code">&gt;&gt; DISCIPLINE // NON_NEGOTIABLE</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 02: Interactive Robotics CLI Telemetry -->
+  <section id="telemetry" class="mech-section mech-bg-dark">
+    <div class="container">
+      
+      <div class="mech-section-heading">
+        <div class="heading-tag">// 02: LIVE_TERMINAL</div>
+        <h2 class="heading-title">INTERACTIVE COMMAND INTERFACE</h2>
+        <div class="heading-line"></div>
+      </div>
+
+      <div class="mech-terminal-box">
+        <div class="term-hud-top">
+          <div class="term-status-group">
+            <span class="term-led led-yellow"></span>
+            <span class="term-led led-white"></span>
+            <span class="term-led led-dim"></span>
+            <span class="term-label">MECH_SHELL://AMRIT_SAGAR/KERNEL_V3</span>
+          </div>
+          <div class="term-right-info">BAUD: 115200 &bull; PROTOCOL: SECURE</div>
+        </div>
+
+        <div class="term-screen" id="terminalOutput">
+          <div class="term-row"><span class="t-prompt">amrit@mech:~$</span> <span class="t-cmd">whoami --verbose</span></div>
+          <div class="t-res">NAME: Amrit Sagar | ROLE: AI Agent Engineer &amp; Systems Developer | CONFIDENCE: RISING</div>
+          
+          <div class="term-row"><span class="t-prompt">amrit@mech:~$</span> <span class="t-cmd">cat ~/system_manifest.yaml</span></div>
+          <pre class="t-code">
+---
+operator: "Amrit Sagar"
+current_stack:
+  terminal: "Zsh / Advanced CLI Tooling"
+  agents: "Google Antigravity (agy), Multi-Agent Swarms"
+  languages: ["Python 3 (Core & Scripting)", "C Language (Pointers & Arch)"]
+  lifestyle_pillar: "Gym / Physical Fitness &amp; Progressive Overload"
+status: "High velocity, constant curiosity"
+          </pre>
+
+          <div class="term-row"><span class="t-prompt">amrit@mech:~$</span> <span class="t-cmd">agy --status</span></div>
+          <div class="t-res text-yellow">[ONLINE] Antigravity 2.0 Agentic Subsystems: ALL SYSTEMS NOMINAL</div>
+
+          <div class="term-row term-cursor-row">
+            <span class="t-prompt">amrit@mech:~$</span> <span class="t-typing-target"></span><span class="t-cursor">█</span>
+          </div>
+        </div>
+
+        <div class="term-hud-bottom">
+          <span class="hint-key">[TIP: CLICK TERMINAL TO INJECT TELEMETRY COMMANDS]</span>
+          <span class="mem-stat">BUFFER: 100% OK</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section 03: Subsystems & Technical Arsenal -->
+  <section id="skills" class="mech-section">
+    <div class="container">
+      
+      <div class="mech-section-heading">
+        <div class="heading-tag">// 03: SUBSYSTEM_MATRIX</div>
+        <h2 class="heading-title">TECHNICAL SPECIFICATIONS</h2>
+        <div class="heading-line"></div>
+      </div>
+
+      <div class="subsystems-grid">
+        
+        <!-- Module 1: AGY -->
+        <div class="subsystem-card">
+          <div class="card-corner-accent"></div>
+          <div class="mod-meta">
+            <span class="mod-id">MOD-01</span>
+            <span class="mod-class">INTELLIGENCE</span>
+          </div>
+          <h3 class="mod-title">ANTIGRAVITY &amp; AI AGENTS</h3>
+          <p class="mod-desc">
+            Comfortable orchestrating AGY, designing agent prompt topologies, pair programming with LLMs, and delegating complex automated tool chains.
+          </p>
+          <div class="mod-tags">
+            <span>AGY TOOLS</span>
+            <span>AGENT SWARMS</span>
+            <span>AUTONOMOUS CODE</span>
+          </div>
+        </div>
+
+        <!-- Module 2: CLI -->
+        <div class="subsystem-card">
+          <div class="card-corner-accent"></div>
+          <div class="mod-meta">
+            <span class="mod-id">MOD-02</span>
+            <span class="mod-class">INTERFACE</span>
+          </div>
+          <h3 class="mod-title">CLI &amp; TERMINAL FLUENCY</h3>
+          <p class="mod-desc">
+            Rapid navigation, shell pipes, process supervision, file stream editing, and automated development workflows directly in macOS / Linux terminal.
+          </p>
+          <div class="mod-tags">
+            <span>UNIX / ZSH</span>
+            <span>PIPES &amp; GREP</span>
+            <span>CLI UTILITIES</span>
+          </div>
+        </div>
+
+        <!-- Module 3: Python -->
+        <div class="subsystem-card">
+          <div class="card-corner-accent"></div>
+          <div class="mod-meta">
+            <span class="mod-id">MOD-03</span>
+            <span class="mod-class">SOFTWARE</span>
+          </div>
+          <h3 class="mod-title">PYTHON PROGRAMMING</h3>
+          <p class="mod-desc">
+            Core Python fundamentals: procedural logic, object-oriented principles, modular architecture, automation scripts, and API integrations.
+          </p>
+          <div class="mod-tags">
+            <span>PYTHON 3</span>
+            <span>AUTOMATION</span>
+            <span>DATA STRUCTURES</span>
+          </div>
+        </div>
+
+        <!-- Module 4: C Language -->
+        <div class="subsystem-card">
+          <div class="card-corner-accent"></div>
+          <div class="mod-meta">
+            <span class="mod-id">MOD-04</span>
+            <span class="mod-class">LOW-LEVEL</span>
+          </div>
+          <h3 class="mod-title">C &amp; SYSTEMS ARCHITECTURE</h3>
+          <p class="mod-desc">
+            Foundations of memory addresses, pointer arithmetic, manual allocation, compilation mechanics, and fundamental computational logic.
+          </p>
+          <div class="mod-tags">
+            <span>C BASICS</span>
+            <span>POINTERS</span>
+            <span>COMPILERS (GCC)</span>
+          </div>
+        </div>
+
+        <!-- Module 5: Gym & Fitness -->
+        <div class="subsystem-card">
+          <div class="card-corner-accent"></div>
+          <div class="mod-meta">
+            <span class="mod-id">MOD-05</span>
+            <span class="mod-class">DISCIPLINE</span>
+          </div>
+          <h3 class="mod-title">GYM &amp; PHYSICAL RESILIENCE</h3>
+          <p class="mod-desc">
+            Consistent physical training, progressive overload, and athletic discipline that powers mental stamina, sharpness, and high work capacity.
+          </p>
+          <div class="mod-tags">
+            <span>WEIGHTLIFTING</span>
+            <span>CONSISTENCY</span>
+            <span>MENTAL ENDURANCE</span>
+          </div>
+        </div>
+
+        <!-- Module 6: Confidence -->
+        <div class="subsystem-card highlight-subsystem">
+          <div class="card-corner-accent"></div>
+          <div class="mod-meta">
+            <span class="mod-id">MOD-06</span>
+            <span class="mod-class text-yellow">MOMENTUM</span>
+          </div>
+          <h3 class="mod-title text-yellow">EVOLVING CONFIDENCE</h3>
+          <p class="mod-desc">
+            Transitioned from hesitation to active execution. Confident in debugging errors, learning unfamiliar frameworks, and delivering real solutions.
+          </p>
+          <div class="mod-tags">
+            <span>SELF-DIRECTED</span>
+            <span>RAPID LEARNING</span>
+            <span>HIGH VELOCITY</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 04: Evolution Timeline / Roadmap -->
+  <section id="timeline" class="mech-section mech-bg-dark">
+    <div class="container">
+      
+      <div class="mech-section-heading">
+        <div class="heading-tag">// 04: TRAJECTORY_LOG</div>
+        <h2 class="heading-title">OPERATIONAL MILESTONES</h2>
+        <div class="heading-line"></div>
+      </div>
+
+      <div class="mech-timeline">
+        
+        <div class="timeline-step">
+          <div class="step-num">01</div>
+          <div class="step-panel">
+            <div class="step-tag text-yellow">STAGE 01 &bull; COMPUTATION BASICS</div>
+            <h3 class="step-title">The Foundation in C</h3>
+            <p class="step-desc">
+              Began dissecting how hardware executes code. Explored compilation, pointers, memory logic, and low-level algorithms.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-step">
+          <div class="step-num">02</div>
+          <div class="step-panel">
+            <div class="step-tag text-yellow">STAGE 02 &bull; VERSATILE SCRIPTING</div>
+            <h3 class="step-title">Python Core Foundations</h3>
+            <p class="step-desc">
+              Adopted Python for rapid logic building, handling data structures, and connecting modular components.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-step">
+          <div class="step-num">03</div>
+          <div class="step-panel">
+            <div class="step-tag text-yellow">STAGE 03 &bull; ENVIRONMENT MASTERY</div>
+            <h3 class="step-title">CLI Navigation &amp; Shell Speed</h3>
+            <p class="step-desc">
+              Substantially upgraded command line proficiency. Directing developer workflows, git versions, and tools without relying on slow GUIs.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-step">
+          <div class="step-num">04</div>
+          <div class="step-panel">
+            <div class="step-tag text-yellow">STAGE 04 &bull; AGENTIC REVOLUTION</div>
+            <h3 class="step-title">Embracing AGY &amp; Autonomous AI</h3>
+            <p class="step-desc">
+              Integrated Google Antigravity and modern agent swarms into daily development, transforming speed and technical horizons.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-step current-step">
+          <div class="step-num step-highlight">NOW</div>
+          <div class="step-panel panel-highlight">
+            <div class="step-tag text-white">ACTIVE STATE &bull; MOMENTUM &amp; DISCIPLINE</div>
+            <h3 class="step-title text-yellow">Full Velocity &amp; Confidence</h3>
+            <p class="step-desc text-white">
+              Reinforced by gym discipline, terminal speed, and AI pair programming—ready to tackle ambitious engineering challenges.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section 05: Contact / Transmission -->
+  <section id="contact" class="mech-section">
+    <div class="container">
+      <div class="transmission-box">
+        <div class="trans-top-hazard"></div>
+        <div class="trans-content">
+          <div class="heading-tag">// INITIATE_TRANSMISSION</div>
+          <h2 class="trans-title">CONNECT WITH <span class="text-yellow">AMRIT SAGAR</span></h2>
+          <p class="trans-desc">
+            Available for AI agent workflows, software development, terminal systems collaboration, and technical projects.
+          </p>
+
+          <div class="trans-actions">
+            <a href="mailto:amrit@example.com" class="mech-btn btn-primary-yellow">
+              <span class="btn-corner"></span>
+              DISPATCH DIRECT EMAIL &#9658;
+            </a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="mech-btn btn-outline-white">
+              <span class="btn-corner"></span>
+              GITHUB TERMINAL
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="mech-btn btn-outline-white">
+              <span class="btn-corner"></span>
+              LINKEDIN NETWORK
+            </a>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container footer-content">
-      <p>&copy; 2026 Amrit Sagar. Crafted with HTML, CSS & AI Pair Programming.</p>
-      <div class="footer-links">
-        <a href="#home">Back to top ↑</a>
+  <!-- Mechanical Footer -->
+  <footer class="mech-footer">
+    <div class="container footer-row">
+      <div class="footer-left">
+        <span class="text-yellow">// AMRIT SAGAR</span> &bull; ROBOTICS &amp; AGENTIC INTERFACE
+      </div>
+      <div class="footer-right">
+        <span>PALETTE: BLACK / WHITE / CYBER YELLOW</span>
+        <a href="#home" class="back-to-top">&#9650; TOP_OF_STACK</a>
       </div>
     </div>
   </footer>
